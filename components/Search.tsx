@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 import "@/app/globals.css";
+import Image from 'next/image'
 
 
 const routes =[
@@ -69,7 +70,7 @@ const Search = () => {
       }`}
     >
       <div className='flex flex-col items-center justify-center gap-2 w-20 h-20 p-5'>
-        <img src={`/${route.image}`} />        
+        <Image alt='img' src={`/${route.image}`} width={100} height={100} />        
         <label className='text-center whitespace-nowrap'>{route.label}</label>
       </div>
     </Link>

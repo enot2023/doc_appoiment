@@ -29,8 +29,8 @@ const Header = () => {
       </div>
       <ul className='md:flex gap-8 hidden pt-5 '>
         {Menu.map((item) => (
-          <Link href={item.path}>
-            <li key={item.id} className='hover:text-primary cursor-pointer hover:scale-105 transition-all ease-in-out'>
+          <Link key={item.id}  href={item.path}>
+            <li className='hover:text-primary cursor-pointer hover:scale-105 transition-all ease-in-out'>
               {item.name}
             </li>
           </Link>

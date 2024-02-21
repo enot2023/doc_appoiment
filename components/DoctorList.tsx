@@ -1,12 +1,9 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
-import FirebaseConfig from "@/components/FirebasseConfig/FirebaseConfig"
-const databaase = FirebaseConfig();
+
+
 const DoctorList = () => {
-    let[Categoty, setCategory]=useState('')
-    let[Drname, setDrname]=useState('')
-    let[Expirence, setExpirence]=useState('')
-    let[Address, setAddress]=useState('')
+  
   return (
     <div className='mb-10 px-10'>
         <h2 className='font-bold text-xl'>Popular Doctors</h2>
